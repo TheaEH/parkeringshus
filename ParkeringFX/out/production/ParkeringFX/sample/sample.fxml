@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="96.0" layoutY="69.0" prefHeight="38.0" prefWidth="278.0" text="Parkeringsautomat">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBilnummer" layoutX="103.0" layoutY="125.0" prefHeight="26.0" prefWidth="154.0" promptText="Bilnummer" />
+      <Label fx:id="lblAvgift" alignment="TOP_LEFT" layoutX="65.0" layoutY="185.0" prefHeight="90.0" prefWidth="422.0" text="Priser: 15kr + 20kr pr. time (10kr pr. time for langtidsparkering) " textOverrun="CLIP" />
+      <Button layoutX="25.0" layoutY="263.0" mnemonicParsing="false" onAction="#regKorttid" prefHeight="26.0" prefWidth="154.0" text="Korttidsparkering" />
+      <Button layoutX="217.0" layoutY="263.0" mnemonicParsing="false" onAction="#regLangtid" prefHeight="26.0" prefWidth="146.0" text="Langtidsparkering" />
+      <Button layoutX="396.0" layoutY="263.0" mnemonicParsing="false" onAction="#kjorUt" prefHeight="26.0" prefWidth="82.0" text="Kjør ut" />
+   </children>
+</AnchorPane>
