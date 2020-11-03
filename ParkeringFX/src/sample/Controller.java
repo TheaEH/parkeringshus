@@ -69,7 +69,7 @@ class Parkeringshus{
             if (element.bilNummer.equals(bilNummeret)) {
                 kvittering = element.formaterKvittering();
                 System.out.println(element.formaterKvittering());
-                biler.remove(element);
+                //biler.remove(element);
                 return kvittering;
             }
         }
